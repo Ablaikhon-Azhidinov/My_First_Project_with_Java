@@ -1,0 +1,6 @@
+# Project exclude paths
+/.gradle/
+/build/
+/My First Project with Java/task/build/
+/My First Project with Java/task/out/
+/My First Project with Java/task/out/production/classes/
