@@ -52,21 +52,6 @@ subprojects {
     }
 }
 
-project(':util') {
-    dependencies {
-        implementation 'com.github.hyperskill:hs-test:release-SNAPSHOT'
-    }
-}
-
-def utilProject = rootProject.project(':util')
-
-configure(subprojects.findAll { it.name != 'util' }) {
-    dependencies {
-        testImplementation utilProject.sourceSets.main.output
-        testImplementation utilProject.sourceSets.test.output
-    }
-}
-
 wrapper {
     gradleVersion = hs.gradle.version
 }
